@@ -1,86 +1,57 @@
-*{
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #29c7fe;
+  background-color: #29c7fe;
 }
-/* //Which div are you trying to apply the style to */
-
-/*row-1 div*/
-
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
 nav ul li {
-    text-decoration: none;
-    list-style: none;
+  text-decoration: none;
+  list-style: none;
 }
-
-.row-1 {
-    /* display: flex;
-    flex-direction: row;
-     width: 90%; 
-    position: absolute;
-    align-items: stretch;
-    justify-content: left;
-    object-fit: contain; */
-    /* border: 2px solid blueviolet;    */
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    z-index:1000;
-    backround-color:black;
-}
-/* OPen it in the browser */
 .btn {
-    color: aliceblue;
-    background-color: darkblue;
-    border-radius: 100px;
+  color: #fff;
+  border: none;
+  background-color: #00000045;
+  border-radius: 100px;
+  padding: 0.7rem 4rem;
+  font-size: 1.1rem;
+}
+.row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid red;
+  padding: 1rem;
+}
+.col-1 {
+  z-index: 1000;
 }
 
-.mission-statement {
-    font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 72px;
-    color: white;
-    margin-left: 10px;
+.logo-extend {
+  text-align: right;
+  padding-right: 3rem;
+  font-size: 2rem;
+  color: #fff;
 }
-
-
-.col-1{
-    flex: 1;
-    display: inline-block;
-    position: relative;
-  
+.col-1 h1 {
+  /* background: #000; */
+  max-width: 795px;
+  font-size: 4rem;
+  z-index: 1000;
+  margin-right: -15rem;
+  color: #fff;
 }
-
-.col-2{
-    flex: 1;
-    display: inline-block;
-    max-width: 30vw;
-    /* position: relative; */
+.col-2 {
 }
-
-.img-one{
-    /* position: relative; */
-    width: 700px;
-    height: 500px;
-    float: right;
-}
-
-.logo-wrapper p {
-    color: white;
-    position: inherit;
-    font-weight: bold;
-    float: right;
-    font-size: x-large;
-
-
-}
-
-.logo-wrapper {
-    width: 50%;
-    /* border: 2px solid red; */
+.col-2 img {
+  max-width: 800px;
 }
